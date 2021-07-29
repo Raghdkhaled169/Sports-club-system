@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B926FA24-CDD2-4AE5-AC7D-AC02ADE9BECD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SoftwareFinal</RootNamespace>
+    <AssemblyName>SoftwareFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Sarah\4th semester\Software Engineering\ODP2_Connected_Start\ODP1_Connected_Start\bin\Debug\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Event.Designer.cs">
+      <DependentUpon>Add_Event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Trainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Trainer.Designer.cs">
+      <DependentUpon>Add_Trainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Trip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Trip.Designer.cs">
+      <DependentUpon>Add_Trip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assign_memeber_sport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assign_memeber_sport.Designer.cs">
+      <DependentUpon>Assign_memeber_sport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assign_trainer_sport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assign_trainer_sport.Designer.cs">
+      <DependentUpon>Assign_trainer_sport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Att_Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Att_Event.Designer.cs">
+      <DependentUpon>Att_Event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Att_Trip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Att_Trip.Designer.cs">
+      <DependentUpon>Att_Trip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_employee.Designer.cs">
+      <DependentUpon>Create_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Employee_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_login.Designer.cs">
+      <DependentUpon>Employee_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Menu.Designer.cs">
+      <DependentUpon>Employee_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintain_member_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintain_member_info.Designer.cs">
+      <DependentUpon>Maintain_member_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintain_sport_schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintain_sport_schedule.Designer.cs">
+      <DependentUpon>Maintain_sport_schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_Login.Designer.cs">
+      <DependentUpon>Member_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_menu.Designer.cs">
+      <DependentUpon>Member_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mian_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mian_Page.Designer.cs">
+      <DependentUpon>Mian_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Renew_membership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renew_membership.Designer.cs">
+      <DependentUpon>Renew_membership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report2.Designer.cs">
+      <DependentUpon>Report2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_menu.Designer.cs">
+      <DependentUpon>Report_menu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_Event.resx">
+      <DependentUpon>Add_Event.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Trainer.resx">
+      <DependentUpon>Add_Trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Trip.resx">
+      <DependentUpon>Add_Trip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assign_memeber_sport.resx">
+      <DependentUpon>Assign_memeber_sport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assign_trainer_sport.resx">
+      <DependentUpon>Assign_trainer_sport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Att_Event.resx">
+      <DependentUpon>Att_Event.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Att_Trip.resx">
+      <DependentUpon>Att_Trip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_employee.resx">
+      <DependentUpon>Create_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_login.resx">
+      <DependentUpon>Employee_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Menu.resx">
+      <DependentUpon>Employee_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintain_member_info.resx">
+      <DependentUpon>Maintain_member_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintain_sport_schedule.resx">
+      <DependentUpon>Maintain_sport_schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_Login.resx">
+      <DependentUpon>Member_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_menu.resx">
+      <DependentUpon>Member_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mian_Page.resx">
+      <DependentUpon>Mian_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renew_membership.resx">
+      <DependentUpon>Renew_membership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report2.resx">
+      <DependentUpon>Report2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_menu.resx">
+      <DependentUpon>Report_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-and-destination-904053.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gatheringpoint.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\description.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u2.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p2.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
